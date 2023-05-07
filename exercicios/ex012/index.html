@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <p><b>.MP4</b></p>
+    <video src="midia/meu-video-1.mp4" width="500" controls></video> 
+    <p><b>.MKV</b></p>
+    <video src="midia/meu-video.mkv" width="500" controls></video>
+    <p><b>.WEBM</b></p>
+    <video src="midia/meu-video.webm" width="500" controls></video>
+    <p><b>.OGV</b></p>
+    <video src="midia/meu-video.ogv" width="500" controls></video>
+    <!-- Esses acimas são só exemplos. -->
+
+    <p><b><i>Modo de inserir vídeos, para ser compativel com varios navegadores é esse. Porém esse modo os videos vão ser osbedados no próprio site, isso tem um problema porque vai geral um fluxo de dados muito grande e vai ser bem caro $ para o cliente pagar.</b></i></p>
+
+    <!-- A ordem dos vídeos faz todo a diferença, pq ele sempre vai tentar rodar do primeiro para o ultimo -->
+    <video width="560" poster="imagens/limoes-capa.png" controls autoplay loop>
+        <source src="midia/meu-video-1.mp4" type="video/mp4"> 
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.mkv" type="video/mkv">
+        <source src="midia/meu-video.ogv" type="video/ogv">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <h3><i>Add vídeos direto do YouTube, não tera problemas com o fluxo de dados, porém tem a desvantagem que todos poderam ver seu vídeo no YouTube.</i></h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <h3><i>Add vídeos direto do Vimeo, não tera problemas com o fluxo de dados, porém tem a desvantagem que ele é pago.</i></h3>
+    <iframe src="https://player.vimeo.com/video/342254441?h=e040aeff9f&color=ff9933&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
