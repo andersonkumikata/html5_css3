@@ -8,30 +8,44 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
         }
 
         table {
-            width: 500px;
+            width: 600px;
             border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.4em;
+            font-weight: bold;
+            padding: 6px;
+            background-color: lightgray;
         }
 
         td, th {
             border: 1px solid black;
             padding: 10px;
+            text-align: center;
         }
 
         thead, tfoot {
             background-color: #808080;
             color: white;
         }
+
+        td.num {
+            text-align: right;
+        }
                 
     </style>
 </head>
 <body>
-    <h1>Uso de tabelas grandes</h1>
+    <h1>Uso de Tabelas Grandes</h1>
     <!--
         ANATOMIA PARA TABELAS GRANDES TABLE
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH 
             TBODY
@@ -40,182 +54,183 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas do Brasil</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
-                <th>País Comparável (Habitantes)</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">País Comparável (Habitantes)</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
                 <td>São Paulo</td>
-                <td>46 024 937</td>
-                <td>Espanha (46 754 778)</td>
+                <td class="num">46.024.937</td>
+                <td>Espanha (46.754.778)</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>Minas Gerais</td>
-                <td>20 732 660</td>
-                <td> Burquina Fasso (20 903 273)</td>
+                <td class="num">20.732.660</td>
+                <td>Burquina Fasso (20.903.273)</td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>Rio de Janeiro</td>
-                <td>16 615 526</td>
-                <td>Camboja (16 718 965)</td>
+                <td class="num">16.615.526</td>
+                <td>Camboja (16.718.965)</td.>
             </tr>
             <tr>
                 <td>4</td>
                 <td>Bahia</td>
-                <td>14 659 023</td>
-                <td> Zimbabwe (14 862 924)</td>
+                <td class="num">14.659.023</td>
+                <td>Zimbabwe (14.862.924)</td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>Paraná</td>
-                <td>11 835 379</td>
-                <td>Tunísia (11 818 619)</td>
+                <td class="num">11.835.379</td>
+                <td>Tunísia (11.818.619)</td>
             </tr>
             <tr>
                 <td>6</td>
                 <td>Rio Grande do Sul</td>
-                <td>11 088 065</td>
-                <td> Cuba (11 326 616)</td>
+                <td class="num">11.088.065</td>
+                <td>Cuba (11.326.616)</td>
             </tr>
             <tr>
                 <td>7</td>
                 <td>Pernambuco</td>
-                <td>9 051 113</td>
-                <td> Áustria (9 006 398)</td>
+                <td class="num">9.051.113</td>
+                <td> Áustria (9.006.398)</td>
             </tr>
             <tr>
                 <td>8</td>
                 <td>Ceará</td>
-                <td>8 936 431</td>
-                <td>Papua-Nova Guiné (8 947 024)</td>
+                <td class="num">8.936.431</td>
+                <td>Papua-Nova Guiné (8.947.024)</td>
             </tr>
             <tr>
                 <td>9</td>
                 <td>Pará</td>
-                <td>8 442 962</td>
-                <td>Suíça (8 654 622)</td>
+                <td class="num">8.442.962</td>
+                <td>Suíça (8.654.622)</td>
             </tr>
             <tr>
                 <td>10</td>
                 <td>Santa Catarina</td>
-                <td>7 762 154</td>
-                <td> Paraguai (7 132 538)</td>
+                <td class="num">7.762.154</td>
+                <td>Paraguai (7.132.538)</td>
             </tr>
             <tr>
                 <td>11</td>
                 <td>Goiás</td>
-                <td>6 950 976</td>
-                <td> Bulgária (6 948 445)</td>
+                <td class="num">6.950.976</td>
+                <td>Bulgária (6.948.445)</td>
             </tr>
             <tr>
                 <td>12</td>
                 <td>Maranhão</td>
-                <td>6 800 605</td>
-                <td>Bulgária (6 948 445)</td>
+                <td class="num">6.800.605</td>
+                <td>Bulgária (6.948.445)</td>
             </tr>
             <tr>
                 <td>13</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Espírito Santo</td>
+                <td class="num">4.108.508</td>
+                <td>Geórgia (3.989.167)</td>
             </tr>
             <tr>
                 <td>14</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Paraíba</td>
+                <td class="num">4.030.961</td>
+                <td>Geórgia (3.989.167)</td>
             </tr>
             <tr>
                 <td>15</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Amazonas</td>
+                <td class="num">3.952.262</td>
+                <td>Geórgia (3.989.167)</td>
             </tr>
             <tr>
                 <td>16</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Mato Grosso</td>
+                <td class="num">3.784.239</td>
+                <td>Geórgia (3.989.167)</td>
             </tr>
             <tr>
                 <td>17</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.303.953</td>
+                <td>Uruguai (3.473.730)</td>
             </tr>
             <tr>
                 <td>18</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Piauí</td>
+                <td class="num">3.270.174</td>
+                <td>Bósnia e Herzegovina (3.280.819)</td>
             </tr>
             <tr>
                 <td>19</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Alagoas</td>
+                <td class="num">3.125.254</td>
+                <td>Mónaco (3.278.290)</td>
             </tr>
             <tr>
                 <td>20</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Distrito Federal</td>
+                <td class="num">2.923.369</td>
+                <td>Armênia (2.963.243)</td>
             </tr>
             <tr>
                 <td>21</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.833.742</td>
+                <td>Albânia (2.877.797)</td>
             </tr>
             <tr>
                 <td>22</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Sergipe</td>
+                <td class="num">2.211.868</td>
+                <td>Gabão (2.225.734)</td>
             </tr>
             <tr>
                 <td>23</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Rondônia</td>
+                <td class="num">1.616.379</td>
+                <td>Bahrein (1.701.575)</td>
             </tr>
             <tr>
                 <td>24</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Tocantins</td>
+                <td class="num">1.584.306</td>
+                <td>Guiné Equatorial (1.402.985)</td>
             </tr>
             <tr>
                 <td>25</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Acre</td>
+                <td class="num">829.780</td>
+                <td>Comores (869.601)</td>
             </tr>
             <tr>
                 <td>26</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Amapá</td>
+                <td class="num">774.268</td>
+                <td>Guiné (786.552)</td>
             </tr>
             <tr>
                 <td>27</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Roraima</td>
+                <td class="num">634.805</td>
+                <td>Montenegro (649.335)</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th colspan="2" class="pular-celula">Total de População</th>
-                <td>000</td>
+                <th scope="row" colspan="2" class="pular-celula">Total de População</th>
+                <td class="num"><strong>207.883.699</strong></td>
                 <td></td>
             </tr>
         </tfoot>
