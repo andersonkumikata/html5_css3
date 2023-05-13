@@ -12,8 +12,9 @@
         }
 
         table {
-            width: 600px;
+            max-width: 700px;
             border-collapse: collapse;
+            position: relative;   
         }
 
         caption {
@@ -30,10 +31,24 @@
         }
 
         thead, tfoot {
-            background-color: #808080;
+            background-color: #383838;
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
+        }
+        
         td.num {
             text-align: right;
         }
@@ -235,5 +250,9 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora id, magnam commodi laboriosam facilis perferendis hic qui sunt perspiciatis consequuntur doloribus quidem, veritatis vero magni sit! Fuga corporis voluptatum labore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo aspernatur illo dicta voluptatum deleniti voluptatem nulla, architecto, quam, dolores mollitia quis expedita illum magni! Laboriosam deserunt quidem cupiditate rem officia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus repellat, corporis laboriosam vero omnis beatae maiores ipsa minima assumenda deleniti autem eius? Reprehenderit magni similique earum repellendus. Rem, soluta consequuntur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, voluptatibus voluptates molestiae inventore doloremque error sit hic saepe, minima quam magnam voluptatum non natus tempore dicta? Quod facilis ipsa rerum.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora id, magnam commodi laboriosam facilis perferendis hic qui sunt perspiciatis consequuntur doloribus quidem, veritatis vero magni sit! Fuga corporis voluptatum labore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo aspernatur illo dicta voluptatum deleniti voluptatem nulla, architecto, quam, dolores mollitia quis expedita illum magni! Laboriosam deserunt quidem cupiditate rem officia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus repellat, corporis laboriosam vero omnis beatae maiores ipsa minima assumenda deleniti autem eius? Reprehenderit magni similique earum repellendus. Rem, soluta consequuntur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, voluptatibus voluptates molestiae inventore doloremque error sit hic saepe, minima quam magnam voluptatum non natus tempore dicta? Quod facilis ipsa rerum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora id, magnam commodi laboriosam facilis perferendis hic qui sunt perspiciatis consequuntur doloribus quidem, veritatis vero magni sit! Fuga corporis voluptatum labore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo aspernatur illo dicta voluptatum deleniti voluptatem nulla, architecto, quam, dolores mollitia quis expedita illum magni! Laboriosam deserunt quidem cupiditate rem officia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus repellat, corporis laboriosam vero omnis beatae maiores ipsa minima assumenda deleniti autem eius? Reprehenderit magni similique earum repellendus. Rem, soluta consequuntur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, voluptatibus voluptates molestiae inventore doloremque error sit hic saepe, minima quam magnam voluptatum non natus tempore dicta? Quod facilis ipsa rerum.</p>
 </body>
 </html>
